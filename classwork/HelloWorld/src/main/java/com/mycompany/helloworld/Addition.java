@@ -9,6 +9,8 @@ package com.mycompany.helloworld;
  * adding number with input
  * @author Davinder
  * Created on 06-09-2021
+ *email: davinder.negi1@gmail.com
+ *purpose: Addition of to numbers with input console
  */
 import java.util.Scanner;
 public class Addition {

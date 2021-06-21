@@ -8,7 +8,7 @@ import java.util.Scanner;
 import java.util.Random;
 /**
  *
- * @author mamta
+ * @author davinder
  */
 public class dowhileloop {
     public static void main(String[] args) {

@@ -19,11 +19,16 @@ public class MiniZork {
         System.out.println("You are standing in an open field west of a white house,");
         System.out.println("With a boarded front door.");
         System.out.println("There is a small mailbox here.");
-        System.out.println("Go to the house, or open the mailbox? ");
+        System.out.println("Go to the house, or open the mailbox? or Let's enjoy");
 
         String action = userInput.nextLine();
 
-        if (action.equals("open the mailbox")) {
+        if (action.equals("open the mailbox") || action.equals("Let's enjoy")) {
+            if (action.equals("Let's enjoy"))
+            {
+                System.out.println("Successfull coding");
+            } else if(action.equals("open the mailbox"))
+            {
             System.out.println("You open the mailbox.");
             System.out.println("It's really dark in there.");
             System.out.println("Look inside or stick your hand in? ");
@@ -44,6 +49,6 @@ public class MiniZork {
                 }
             } else if (action.equals("stick your hand in")) { }
         } else if (action.equals("go to the house")) { }
-
+        }
     }
 }

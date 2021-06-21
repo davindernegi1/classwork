@@ -20,23 +20,15 @@ public class WindowMaster {
 
     // declare String variables to hold the user's height and
     // width input
-    String stringHeight;
-    String stringWidth;
-
     // declare other variables
     float areaOfWindow;
     float cost;
     float perimeterOfWindow;
 //take he input from user about height and weight
-Scanner myScanner = new Scanner (System.in);
-System.out.println("Please enter the Height of the window");
-stringHeight = myScanner.nextLine();
 
-System.out.println("Please enter the Width of the window");
-stringWidth = myScanner.nextLine();
+height = addValue("Please enter the Height of the window:");
+width = addValue("Please enter the Width of the window:");
 
-height=Float.parseFloat(stringHeight);
-width= Float.parseFloat(stringWidth);
 
  // calculate the area of the window
     areaOfWindow = height * width;
@@ -47,11 +39,19 @@ width= Float.parseFloat(stringWidth);
     // for material cost
     cost = ((3.50f * areaOfWindow) + (2.25f * perimeterOfWindow));
     // display the results to the user
-    System.out.println("Window height = " + stringHeight);
-    System.out.println("Window width = " + stringWidth);
+    System.out.println("Window height = " + height);
+    System.out.println("Window width = " + width);
     System.out.println("Window area = " + areaOfWindow);
     System.out.println("Window perimeter = " + perimeterOfWindow);
     System.out.println("Total Cost =  " + cost);
    
+    }
+    public static float addValue (String prompt)
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println(prompt);
+        String input = sc.nextLine();
+        float floatVal = Float.parseFloat(input);
+    return floatVal;
     }
 }

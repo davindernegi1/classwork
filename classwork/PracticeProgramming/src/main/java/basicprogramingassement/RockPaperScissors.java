@@ -38,7 +38,7 @@ public class RockPaperScissors {
       for (int i=1;i<=userInputRange; i++){
       userInputOfGame=TakingUserInput("Let's begin! Select 1 = Rock, 2 = Paper or 3 = Scissors ");
       Random rGen = new Random();
-      int computerSelection= rGen.nextInt(2)+1;
+      int computerSelection= rGen.nextInt(3)+1;
       
   // worng input part incase user enter wrong value rather than 1 to 3
           if (userInputOfGame>3 || userInputOfGame<1)

@@ -14,7 +14,12 @@ Last Revised:: 05-Sug-2021
 
                 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 				<link href="css/restaurantStyles.css" rel="stylesheet" type="text/css" />
+				<link href="js/bootstrap.min.js" rel="stylesheet" type="text/javascript" />
+				
 				<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	<!--<script>			$('.carousel').carousel({
+  interval: 2000
+})</script>-->
 	<style> nav .btn {
     background-color: #5b7d87;
     color: #fef9ff; 
@@ -26,10 +31,12 @@ nav .btn:hover {
 </head>
 <body>
 
-<div>
-<header>
-<div class="text-center" style font-family: monospace;><h1> AMD Group Restuarants</h1></div>
-<hr />
+
+<header class="jumbotron text-center">
+<h1> AMD Group Restuarants</h1>
+<h1> We are going to open a new site location soon near Newton !!</h1>
+</header>
+
 <div>
 <nav>
 
@@ -43,9 +50,22 @@ nav .btn:hover {
 </nav>
 </div>
 <hr />
-</header>
 
 <div class="w-50 mx-auto">
+<!-- Carousel code -->
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+    <img class="d-block w-100" src="images/website-1778529.png" alt="We're opening a new location!"> 
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/Restuarant.png" alt="Second slide">
+    </div>
+     </div>
+</div>
+<!-- Carousel code -->
+<hr/>
+
 <div>
 
 <img src="images/Restuarant.png" class="img-fluid">

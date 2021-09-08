@@ -1,19 +1,23 @@
 <!DOCTYPE html>	
 <!--
 Name: Davinder Singh
-Created on : 30-Sep-2021
-Last Revised:: 30-Sug-2021
+Created on : 07-Sep-2021
+Last Revised:: 07-Sug-2021
 -->
 <html lang="en">
 <head>
 
 <meta charset="utf-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> -->
+
+
 		
-<title>Home Page</title>
+<title>Contact Us</title>
 
                 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 				<link href="css/restaurantStyles.css" rel="stylesheet" type="text/css" />
+				<script type="text/JavaScript" src="js/contactUs.js"></script>
 	<style> nav .btn {
     background-color: #5b7d87;
     color: #fef9ff; 
@@ -30,6 +34,10 @@ a:visited {
 .mainudiv{
     background-color: #5b7d87;
 	position: relative;
+}
+
+td {
+font-weight: bold;
 }
 
 </style>
@@ -58,10 +66,12 @@ a:visited {
 <tr>
 <td>
 
-<form action="fakepage.html" method="POST">
-<tr><td>Name: </td><td> <input type="text" name="mytextinput" /> </td></tr>
-<tr><td>E-mail: </td><td> <input type="text" name="myemailinput" /> </td></tr>
-<tr><td>Password: </td><td> <input type="password" name="mypasswordtinput" required/> </td></tr>
+<form name="fakepage" onsubmit="return validateItems();" 
+onreset="resetForm();" class="form-inline">
+
+<tr><td>Name: </td><td> <input type="text" class="form-control" name="mytextinput" id="fullname" placeholder="Type Full Name" /> </td></tr>
+<tr><td>E-mail: </td><td> <input type="text" class="form-control" name="myemailinput" id="email" placeholder="Email id like xxx@abc.com" /> </td></tr>
+<tr><td>Password: </td><td> <input type="password" class="form-control" name="mypasswordinput" id="pwd" placeholder="Password" required/> </td></tr>
 <tr><td>Reason For Enquiry: </td>
 <td>
 <select name="myenquiry"> 
@@ -71,8 +81,8 @@ a:visited {
 <option value="other">Other</option>
 </select></td></tr>
 
-<tr><td>Additional Information: </td><td> <textarea name="myadditionalinput"> </textarea> </td></tr>
-<tr><td>Have you been to the restuarant? </td><td> <input type="radio" name="answer" value="NO"/> No 
+<tr><td>Additional Information: </td><td> <textarea name="myadditionalinput" id="addInput"> </textarea> </td></tr>
+<tr><td>Have you been to the restuarant? </td><td> <input type="radio" name="answer" value="NO" checked="checked"/> No 
 <input type="radio" name="answer" value="YES"/> YES 
 
 <tr><td>Best days to contact You: </td>
@@ -83,7 +93,10 @@ a:visited {
 <input type="checkbox" name="contactdays" value="Friday"/>F
 </td></tr>
 <tr>
-<td colspan="3"><input type="submit" /></td>
+<td colspan="3" class="text-center">
+<button type="submit" id="submitButton" class="btn btn-default">Submit</button>
+            <button type="reset" id="resetButton" class="btn">Reset</button>
+</td>
 </tr>
 
 </form>

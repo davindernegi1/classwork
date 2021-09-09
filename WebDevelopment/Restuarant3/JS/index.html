@@ -20,7 +20,7 @@ Last Revised:: 05-Sug-2021
 <!--Home ICON-->			
 
 <!--CDN	-->			
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -28,24 +28,32 @@ Last Revised:: 05-Sug-2021
 <!--CDN	-->				
 	
 	
-	<style> nav .btn {
+<style> nav .btn {
     background-color: #5b7d87;
     color: #fef9ff; 
 }			
 nav .btn:hover {
     font-weight: bold;
 }
-</style>
-</head>
-<body>
+button {
+    background-color: #5b7d87;
+    color: #fef9ff; 
+}	
 
+.mainudiv{
+    background-color: #5b7d87;
+	position: relative;
+}
+</style>
+
+<body>
 
 <header class="jumbotron text-center">
 <h1> AMD Group Restuarants</h1>
 <h1> We are going to open a new site location soon near Newton !!</h1>
 </header>
 
-<div>
+<div id="navigation">
 <nav>
 
 <a class="btn" href="Home.html"><i style='font-size:12px' class='fas'>&#xf015;</i>
@@ -85,7 +93,6 @@ nav .btn:hover {
 	</div>
  </div>
 <!-- Carousel code -->
-<hr/>
 
 <div>
 
@@ -101,19 +108,22 @@ Replicating data just to create a paragraph of restuarant description.
 Replicating data just to create a paragraph of restuarant description.Replicating data just to create a paragraph of restuarant description.
 Replicating data just to create a paragraph of restuarant description.
 Replicating data just to create a paragraph of restuarant description.
-</p></div>
+</p>
+</div>
 </div>
 <hr />
-<footer>
-<p>
-8215, 145 St Surrey, BC, V3S 9J6
+
+<div id="footer1">
+<p>8215, 145 St Surrey, BC, V3S 9J6
 </p>
 <p>
 778-384-9044
 </p>
 <hr />
+</div>
+<footer>
 &copy; Copyright by AMD corporation
 </footer>
 </body>
-	
+</head>
 </html>

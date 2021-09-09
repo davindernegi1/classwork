@@ -18,7 +18,14 @@ Last Revised:: 07-Sug-2021
                 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 				<link href="css/restaurantStyles.css" rel="stylesheet" type="text/css" />
 				<script type="text/JavaScript" src="js/contactUs.js"></script>
-	<style> nav .btn {
+	<style> 
+	
+	button {
+    background-color: #5b7d87;
+    color: #fef9ff; 
+}			
+	
+	nav .btn {
     background-color: #5b7d87;
     color: #fef9ff; 
 }			
@@ -45,10 +52,12 @@ font-weight: bold;
 
 <div>
 <header>
-<div class="text-center" style font-family: monospace;><h1> AMD Group Restuarants</h1></div>
+<div class="text-center"><h1> AMD Group Restuarants</h1></div>
 <hr />
-<div>
-<nav>
+</header>
+
+<div id="navigation">
+<nav >
 
 <a class="btn" href="Home.html"> Home 
 </a>
@@ -56,11 +65,10 @@ font-weight: bold;
 </a>
 <a class="btn" href="contact.html"> Contact Us
 </a>
+<hr />
 
 </nav>
 </div>
-<hr />
-</header>
 
 <table  width="50%">
 <tr>
@@ -104,16 +112,19 @@ onreset="resetForm();" class="form-inline">
 </tr>
 </table>
 <hr />
-<footer>
-<p>
-8215, 145 St Surrey, BC, V3S 9J6
+
+<div id="footer1">
+<p>8215, 145 St Surrey, BC, V3S 9J6
 </p>
 <p>
 778-384-9044
 </p>
 <hr />
+</div>
+<footer>
 &copy; Copyright by AMD corporation
 </footer>
+
 </body>
 </head>	
 </html>
